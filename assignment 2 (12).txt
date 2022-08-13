@@ -1,0 +1,28 @@
+int main()
+{
+    int i, j, N, K;
+    printf("Enter number of columns:");
+    scanf("%d",&N);
+
+    K=1;
+
+    for(i=1;i<N*2;i++)
+    {
+        for(j=1; j<=K; j++)
+        {
+            printf("*");
+        }
+
+        if(i < N)
+        {
+            K++;
+        }
+        else
+        {
+            K--;
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
